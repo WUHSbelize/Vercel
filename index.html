@@ -1,1 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Study Medicine at Washington University of Health</title>
+  <meta name="description" content="Join Washington University of Health and Science Belize. Earn your MD with affordable tuition, US clinical training, and no MCAT required.">
+  <meta name="keywords" content="Washington University of Health and Science,WUHS Belize Reviews,WUHS Belize,Washington University of Health and Sciences Belize News">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Washington University of Health and Science | Become a Doctor of Medicine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+    :root {
+      --navy:    #0B1F3A;
+      --navy-mid:#122A4E;
+      --gold:    #C8933A;
+      --gold-lt: #E8B660;
+      --teal:    #1A7A8A;
+      --teal-lt: #21939F;
+      --steel:   #EEF2F7;
+      --muted:   #6B7A8D;
+      --white:   #FFFFFF;
+      --text:    #1C2B3A;
+    }
+
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+      box-shadow: 0 2px 20px rgba(0,0,0,.35);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 12px; text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 40px; height: 40px; background: var(--gold);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-weight: 900; color: var(--navy); font-size: 18px;
+    }
+    .nav-logo-text { color: var(--white); font-size: 15px; font-weight: 600; line-height: 1.2; }
+    .nav-logo-text span { color: var(--gold-lt); font-size: 11px; font-weight: 400; display: block; letter-spacing: .04em; }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.78); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold-lt); }
+    .nav-cta {
+      background: var(--gold); color: var(--navy); padding: 9px 22px;
+      border-radius: 4px; font-weight: 700; font-size: 13px;
+      text-decoration: none; letter-spacing: .03em; transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--gold-lt); }
+
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 88vh;
+      background: linear-gradient(135deg, var(--navy) 55%, var(--navy-mid) 55%);
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 0;
+      padding: 80px 5%;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-left { position: relative; z-index: 2; padding-right: 40px; }
+    .hero-eyebrow {
+      display: inline-block; background: rgba(200,147,58,.18); border: 1px solid var(--gold);
+      color: var(--gold-lt); font-size: 11px; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      font-weight: 900; color: var(--white); line-height: 1.12; margin-bottom: 22px;
+    }
+    .hero h1 em { color: var(--gold-lt); font-style: normal; }
+    .hero-sub { color: rgba(255,255,255,.72); font-size: 16px; max-width: 480px; margin-bottom: 36px; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold); color: var(--navy); padding: 14px 32px;
+      border-radius: 5px; font-weight: 700; font-size: 15px;
+      text-decoration: none; transition: all .22s; display: inline-block;
+      box-shadow: 0 4px 18px rgba(200,147,58,.45);
+    }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(200,147,58,.55); }
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,.4); color: var(--white); padding: 13px 28px;
+      border-radius: 5px; font-weight: 600; font-size: 15px;
+      text-decoration: none; transition: all .22s; display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
+
+
+    .hero-right { position: relative; z-index: 2; display: flex; justify-content: center; }
+    .hero-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px; padding: 36px; max-width: 400px; width: 100%;
+      backdrop-filter: blur(10px);
+    }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-box {
+      background: rgba(255,255,255,.07); border-radius: 10px; padding: 20px 16px;
+      text-align: center; border: 1px solid rgba(255,255,255,.1);
+    }
+    .stat-box.accent { background: var(--gold); border-color: var(--gold); }
+    .stat-num {
+      font-family: 'Playfair Display', serif; font-size: 2.4rem;
+      font-weight: 900; color: var(--white); line-height: 1;
+    }
+    .stat-box.accent .stat-num { color: var(--navy); }
+    .stat-box.accent .stat-lbl { color: var(--navy); }
+    .stat-lbl { font-size: 11px; font-weight: 600; color: rgba(255,255,255,.62); letter-spacing: .06em; text-transform: uppercase; margin-top: 6px; }
+    .hero-card-title {
+      font-family: 'Playfair Display', serif; color: var(--white);
+      font-size: 1.15rem; font-weight: 600; margin-bottom: 20px; text-align: center;
+    }
+    .hero-badges { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    .hero-badge {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(26,122,138,.25); border: 1px solid rgba(26,122,138,.5);
+      border-radius: 8px; padding: 10px 14px; color: rgba(255,255,255,.85); font-size: 13px;
+    }
+    .hero-badge-icon { font-size: 16px; }
+
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--teal); padding: 28px 5%;
+      display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px;
+    }
+    .sbar-item { text-align: center; }
+    .sbar-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: var(--white); }
+    .sbar-lbl { font-size: 12px; color: rgba(255,255,255,.75); font-weight: 500; letter-spacing: .04em; margin-top: 3px; }
+
+
+    /* ── SECTIONS COMMON ── */
+    section { padding: 90px 5%; }
+    .section-eyebrow {
+      font-size: 11px; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--teal); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700;
+      color: var(--navy); line-height: 1.2; margin-bottom: 16px;
+    }
+    .section-sub { color: var(--muted); font-size: 16px; max-width: 560px; line-height: 1.8; }
+    .centered { text-align: center; }
+    .centered .section-sub { margin: 0 auto 48px; }
+
+
+    /* ── WHY CHOOSE ── */
+    .why { background: var(--steel); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 52px; }
+    .why-card {
+      background: var(--white); border-radius: 12px; padding: 32px 28px;
+      border-top: 4px solid transparent; transition: all .25s;
+      box-shadow: 0 2px 14px rgba(0,0,0,.06);
+    }
+    .why-card:hover { border-top-color: var(--gold); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,.12); }
+    .why-card-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--teal), var(--navy));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; margin-bottom: 18px;
+    }
+    .why-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .why-card p { color: var(--muted); font-size: 14px; line-height: 1.75; }
+
+
+    /* ── PROGRAM ── */
+    .program-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; margin-top: 52px; }
+    .program-phase { }
+    .phase-label {
+      display: inline-block; background: var(--navy); color: var(--gold-lt);
+      font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 3px; margin-bottom: 16px;
+    }
+    .phase-label.teal { background: var(--teal); color: var(--white); }
+    .program-phase h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--navy); margin-bottom: 14px; }
+    .course-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .course-list li {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--steel); border-radius: 8px; padding: 12px 16px;
+      font-size: 14px; font-weight: 500; color: var(--text);
+    }
+    .course-list li::before { content: '◆'; color: var(--gold); font-size: 9px; flex-shrink: 0; }
+
+
+    /* ── ROTATIONS ── */
+    .rotations { background: var(--navy); }
+    .rotations .section-title { color: var(--white); }
+    .rotations .section-sub { color: rgba(255,255,255,.65); }
+    .rotations .section-eyebrow { color: var(--gold-lt); }
+    .rot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 48px; }
+    .rot-card {
+      border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 28px 22px;
+      text-align: center; transition: all .25s; cursor: default;
+    }
+    .rot-card:hover { background: rgba(255,255,255,.06); border-color: var(--gold); }
+    .rot-icon { font-size: 2rem; margin-bottom: 12px; }
+    .rot-card h4 { color: var(--white); font-size: 14px; font-weight: 600; }
+
+
+    /* ── OUTCOMES ── */
+    .outcomes-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .outcomes-visual {
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      border-radius: 16px; padding: 48px; text-align: center; color: var(--white);
+    }
+    .big-num {
+      font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 900;
+      color: var(--gold-lt); line-height: 1;
+    }
+    .big-lbl { font-size: 14px; color: rgba(255,255,255,.75); margin-top: 8px; font-weight: 500; }
+    .support-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+    .support-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      font-size: 15px; color: var(--text); line-height: 1.6;
+    }
+    .support-list li .icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--steel); }
+    .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+    .testi-card {
+      background: var(--white); border-radius: 12px; padding: 32px 28px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.07); position: relative;
+    }
+    .testi-card::before {
+      content: '"'; font-family: 'Playfair Display', serif; font-size: 5rem;
+      color: var(--gold); line-height: 1; position: absolute; top: 14px; left: 24px;
+      opacity: .35;
+    }
+    .testi-card p { color: var(--muted); font-size: 14px; line-height: 1.8; font-style: italic; padding-top: 20px; }
+    .testi-author { margin-top: 20px; font-size: 13px; font-weight: 700; color: var(--navy); }
+    .testi-role { font-size: 12px; color: var(--teal); font-weight: 500; }
+    .stars { color: var(--gold); font-size: 13px; margin-bottom: 8px; }
+
+
+    /* ── NEWS & PR ── */
+    .news { background: var(--white); }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+    .news-card {
+      border: 1px solid #E0E6EE; border-radius: 12px; overflow: hidden;
+      transition: all .25s;
+    }
+    .news-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,.1); transform: translateY(-3px); }
+    .news-card-top {
+      background: linear-gradient(135deg, var(--navy-mid), var(--teal));
+      padding: 22px; display: flex; align-items: center; gap: 12px;
+    }
+    .news-tag {
+      background: var(--gold); color: var(--navy); font-size: 10px; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px;
+    }
+    .news-date { color: rgba(255,255,255,.65); font-size: 12px; margin-left: auto; }
+    .news-card-body { padding: 22px; }
+    .news-card-body h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--navy); margin-bottom: 8px; font-weight: 700; }
+    .news-card-body p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .news-link {
+      display: inline-block; margin-top: 14px; color: var(--teal);
+      font-size: 13px; font-weight: 600; text-decoration: none;
+      border-bottom: 1px solid rgba(26,122,138,.3); transition: color .2s;
+    }
+    .news-link:hover { color: var(--navy); border-color: var(--navy); }
+
+
+    /* ── PR EMBED SECTION ── */
+    .pr-embed { background: #F5F7FB; border-top: 4px solid var(--gold); }
+    .pr-embed-wrapper {
+      background: var(--white); border: 1px solid #D8E0EA; border-radius: 14px;
+      padding: 36px; margin-top: 40px;
+    }
+    .pr-embed-header {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
+      padding-bottom: 20px; border-bottom: 1px solid #EEF2F7;
+    }
+    .pr-icon {
+      width: 46px; height: 46px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+    }
+    .pr-embed-header h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); }
+    .pr-embed-header p { font-size: 13px; color: var(--muted); }
+    .pr-slots { display: flex; flex-direction: column; gap: 16px; }
+    .pr-slot {
+      background: #F8FAFC; border: 1px dashed #C5D0DE; border-radius: 10px;
+      padding: 22px; display: flex; align-items: center; gap: 18px;
+      transition: background .2s;
+    }
+    .pr-slot:hover { background: #EEF5FF; border-color: var(--teal); }
+    .pr-slot-num {
+      width: 34px; height: 34px; background: var(--navy); color: var(--white);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 13px; flex-shrink: 0;
+    }
+    .pr-slot-info { flex: 1; }
+    .pr-slot-title { font-weight: 600; font-size: 14px; color: var(--navy); }
+    .pr-slot-url {
+      font-size: 12px; color: var(--muted); margin-top: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    .pr-slot-badge {
+      font-size: 10px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 3px;
+    }
+    .pr-slot-badge.live { background: #D1FAE5; color: #065F46; }
+    .pr-slot-badge.pending { background: #FEF3C7; color: #92400E; }
+    .pr-slot-badge.placeholder { background: #EDE9FE; color: #5B21B6; }
+    .pr-embed-note {
+      margin-top: 24px; padding: 16px 20px;
+      background: linear-gradient(90deg, rgba(26,122,138,.08), transparent);
+      border-left: 3px solid var(--teal); border-radius: 0 8px 8px 0;
+      font-size: 13px; color: var(--muted); line-height: 1.7;
+    }
+
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(120deg, var(--navy) 0%, var(--teal) 100%);
+      padding: 80px 5%; text-align: center;
+    }
+    .cta-banner h2 {
+      font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.8rem);
+      color: var(--white); margin-bottom: 16px;
+    }
+    .cta-banner p { color: rgba(255,255,255,.72); font-size: 16px; max-width: 540px; margin: 0 auto 36px; }
+    .cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn-white {
+      background: var(--white); color: var(--navy); padding: 14px 34px;
+      border-radius: 5px; font-weight: 700; font-size: 15px;
+      text-decoration: none; transition: all .22s; display: inline-block;
+      box-shadow: 0 4px 18px rgba(0,0,0,.2);
+    }
+    .btn-white:hover { background: #F0F5FF; transform: translateY(-2px); }
+    .btn-outline-white {
+      border: 2px solid rgba(255,255,255,.5); color: var(--white); padding: 12px 28px;
+      border-radius: 5px; font-weight: 600; font-size: 15px;
+      text-decoration: none; transition: all .22s; display: inline-block;
+    }
+    .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.1); }
+
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060E1C; padding: 52px 5% 28px;
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-col h4 { color: var(--gold-lt); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col p { color: rgba(255,255,255,.5); font-size: 13px; line-height: 1.8; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 9px; }
+    .footer-col ul li a { color: rgba(255,255,255,.55); text-decoration: none; font-size: 13px; transition: color .2s; }
+    .footer-col ul li a:hover { color: var(--gold-lt); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08); padding-top: 22px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { color: rgba(255,255,255,.35); font-size: 12px; }
+    .footer-accred {
+      display: flex; gap: 12px; align-items: center;
+    }
+    .accred-badge {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.5); font-size: 11px; padding: 4px 12px; border-radius: 4px;
+    }
+
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-right { display: none; }
+      .program-grid { grid-template-columns: 1fr; gap: 36px; }
+      .outcomes-inner { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 60px 5%; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .stats-bar { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a href="index.html">
+    <img src="https://www.wuhs.edu.bz/images/logo.png" alt="WUHS" width="150" height="50">
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#program">Program</a></li>
+    <li><a href="#rotations">Rotations</a></li>
+    <li><a href="#outcomes">Outcomes</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#press">Press</a></li>
+  </ul>
+</nav>
+
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Accredited Caribbean Medical School · Est. 20+ Years</div>
+    <h1>Washington University of Health and Science – Excellence in Medical Education</h1>
+    <p class="hero-sub">
+      Washington University of Health and Science offers a proven, affordable pathway
+      to a medical career in USA and Canada.
+    </p>
+    <div class="hero-actions">
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-title">Why Students Choose WUHS</div>
+      <div class="stat-grid">
+        <div class="stat-box accent">
+          <div class="stat-num">96%</div>
+          <div class="stat-lbl">USMLE Step 1 Pass Rate</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">20+</div>
+          <div class="stat-lbl">Years of Excellence</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">4yr</div>
+          <div class="stat-lbl">MD Program</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">US</div>
+          <div class="stat-lbl">Clinical Hospitals</div>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="hero-badge-icon">🎓</span> No MCAT Requirement</div>
+        <div class="hero-badge"><span class="hero-badge-icon">💰</span> Affordable Tuition</div>
+        <div class="hero-badge"><span class="hero-badge-icon">🏥</span> US Teaching Hospital Rotations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div class="sbar-item"><div class="sbar-num">96%</div><div class="sbar-lbl">USMLE Step 1 Pass Rate</div></div>
+  <div class="sbar-item"><div class="sbar-num">20+</div><div class="sbar-lbl">Years of Operation</div></div>
+ 
+</div>
+
+
+<!-- ── WHY CHOOSE ── -->
+<section class="why" id="about">
+  <div class="centered">
+   
+    <h2 class="section-title">Why Washington University of Health and Science Is a Preferred Choice for Aspiring Physicians</h2>
+    <p class="section-sub">Washington University of Health and Science is a preferred choice for aspiring physicians because it combines academic rigor, clinical preparation, and student-focused support in an international medical education environment. As one of the recognized accredited caribbean medical schools, WUHS Belize prepares students from the United States and Canada for future licensure, residency, and medical practice through a structured and competency-based curriculum.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-card-icon">🏆</div>
+      <h3>Accredited &amp; Recognized</h3>
+      <p>A fully accredited Caribbean medical school with over two decades of building successful physicians — trusted by students across North America.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">📋</div>
+      <h3>No MCAT Requirement</h3>
+      <p>We believe your potential as a doctor shouldn't be defined by a single standardized test. Our admissions process assesses the whole applicant.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">💵</div>
+      <h3>Affordable Tuition</h3>
+      <p>Quality medical education at a fraction of US domestic school costs — so your focus stays on becoming a great doctor, not managing overwhelming debt.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">🌴</div>
+      <h3>Beautiful Belize Campus</h3>
+      <p>Study in a welcoming, diverse environment with modern facilities, supportive faculty, and a campus culture that fosters both personal and professional growth.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">🏥</div>
+      <h3>US Hospital Training</h3>
+      <p>Clinical rotations take place in accredited US teaching hospitals, giving you real patient-care experience and a head start on residency applications.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">🎯</div>
+      <h3>Student-Centered Support</h3>
+      <p>From faculty mentorship to personalized exam prep and academic advising, our entire team is invested in your individual success every step of the way.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PROGRAM ── -->
+<section id="program">
+
+  <h2 class="section-title">A Complete Medical Education</h2>
+  <p class="section-sub">A complete medical education at Washington University of Health and Science integrates foundational sciences, pre-clinical training, and clinical experience. Students develop medical knowledge, critical thinking, communication skills, and patient-care competencies through a curriculum designed to support success in modern healthcare systems.</p>
+
+
+  <div class="program-grid">
+    <div class="program-phase">
+     
+      <h3>Our Mission</h3>
+      <p style="color:var(--muted);font-size:14px;margin-bottom:20px;line-height:1.75;">
+        Washington University of Health and Science is dedicated to educating future physicians through quality medical education, clinical excellence, and professional integrity. WUHS Belize prepares students from the United States and Canada for successful careers in healthcare.
+      </p>
+    </div>
+>
+
+
+<!-- ── ROTATIONS ── -->
+<section class="rotations" id="rotations">
+  <div class="centered">
+    <h2 class="section-title">Popular Courses</h2>
+    <p class="section-sub">Explore career-focused medical programs designed to build a strong foundation in healthcare and clinical practice.</p>
+  </div>
+  <div class="rot-grid">
+    <div class="rot-card"><div class="rot-icon"></div><h4>Pre-Medical Course Schedule</h4></div>
+    <div class="rot-card"><div class="rot-icon"></div><h4>Pre-Clinical Sciences</h4></div>
+    <div class="rot-card"><div class="rot-icon"></div><h4>Clinical Experience</h4></div>
+    <div class="rot-card"><div class="rot-icon"></div><h4>Medical Research</h4></div>
+    <div class="rot-card"><div class="rot-icon"></div><h4>Foundational Learning</h4></div>
+  </div>
+  <div style="text-align:center;margin-top:44px;">
+  </div>
+</section>
+
+
+<!-- ── OUTCOMES ── -->
+<section id="outcomes">
+  <div class="outcomes-inner">
+    <div class="outcomes-visual">
+      <div class="big-num">96%</div>
+      <div class="big-lbl">USMLE Step 1 Pass Rate</div>
+      <div style="margin-top:32px;border-top:1px solid rgba(255,255,255,.2);padding-top:28px;">
+        <p style="color:rgba(255,255,255,.65);font-size:14px;line-height:1.8;">
+          Our students consistently outperform national averages — a direct result of our rigorous curriculum, expert faculty, and comprehensive exam preparation resources.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="section-eyebrow">Student Outcomes</div>
+      <h2 class="section-title">Results That Speak for Themselves</h2>
+      <p class="section-sub" style="margin-bottom:28px;">We measure our success by yours. Every support system at WUHS is designed to help you clear your licensing exams and enter residency with confidence.</p>
+      <ul class="support-list">
+        <li><span class="icon">👨‍🏫</span><div><strong>Faculty Mentorship</strong> — Direct access to experienced physician educators who guide you academically and professionally.</div></li>
+        <li><span class="icon">📚</span><div><strong>Academic Advising</strong> — Personalized planning to keep your studies on track toward graduation and beyond.</div></li>
+        <li><span class="icon">📝</span><div><strong>USMLE Exam Preparation</strong> — Structured prep courses and practice resources built around Step 1 and Step 2 success.</div></li>
+        <li><span class="icon">🤝</span><div><strong>Residency Guidance</strong> — Support through the residency match process for US and Canadian programs.</div></li>
+      </ul>
+      <div style="margin-top:32px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials">
+  <div class="centered">
+    <div class="section-eyebrow">Student Reviews</div>
+    <h2 class="section-title">What Our Students Are Saying</h2>
+    <p class="section-sub">Thousands of students have chosen WUHS as their path to medicine. Here's what they have to say about their experience.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>The faculty here genuinely care about your success. I never felt like a number — every professor knew my name and where I was struggling. The USMLE prep resources were outstanding.</p>
+      <div class="testi-author">— Marcus T.</div>
+      <div class="testi-role">MD Graduate · Now in Internal Medicine Residency, NY</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>I was rejected from US schools because of my MCAT score. WUHS gave me the chance to prove myself. The clinical rotations in American hospitals prepared me better than I expected.</p>
+      <div class="testi-author">— Priya K.</div>
+      <div class="testi-role">MD Graduate · Family Medicine Residency, Ontario</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>Affordable tuition, a supportive community, and a campus in beautiful Belize — I couldn't have asked for a better environment to study medicine. The 96% pass rate isn't just a number.</p>
+      <div class="testi-author">— James O.</div>
+      <div class="testi-role">3rd Year Student · Currently on Clinical Rotations</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── NEWS ── -->
+<section class="news" id="news">
+  <div class="centered">
+    <div class="section-eyebrow">Latest News</div>
+    <h2 class="section-title">Washington University of Health and Sciences Belize News</h2>
+    <p class="section-sub">Stay informed on academic milestones, university developments, and student success stories from WUHS Belize.</p>
+  </div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-card-top">
+      </div>
+      <div class="news-card-body">
+        <h4>WUHS & Nistansi University
+Signed Agreement</h4>
+        <a href="https://www.wuhs.edu.bz/events/coronavirus-covid-19-update-prometric-closures.php" class="news-link">Read Full Story →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-card-top">
+      </div>
+      <div class="news-card-body">
+        <h4>best Caribbean medical colleges
+WUHS Signed MOU with Romania’s Center</h4>
+        <a href="https://www.wuhs.edu.bz/events/free-nbme-self-assessments-added-answer-explanations-available-in-april.php" class="news-link">Read Full Story →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag"></span>
+      </div>
+      <div class="news-card-body">
+        <h4>best  medical colleges
+Exciting News For WUHS Students & Graduates</h4>
+        <a href="https://www.wuhs.edu.bz/events/wuhs-approved-as-a-wfme-accredited-medical-university.php" class="news-link">Read Full Story →</a>
+
+
+<!-- ── PR EMBED SECTION ── -->
+<section class="pr-embed" id="press">
+  <h2 class="section-title">Latest Blog</h2>
+
+      <!-- PR SLOT 1 — Replace href and text with your actual PR link -->
+      <div class="pr-slot">
+        <div class="pr-slot-num">1</div>
+        <div class="pr-slot-info">
+          <div class="pr-slot-title">Caribbean Medical Schools: Your Gateway to a Successful Medical Career</div>
+<a class="read" href="https://www.wuhs.edu.bz/events/ministry-of-education-culture-science-and-technology-conducts-courtesy-visit-to-washington-university-of-health-and-sciences.php" target="_blank">Read Article →</a>        </div>
+      </div>
+
+
+      <!-- PR SLOT 2 -->
+      <div class="pr-slot">
+        <div class="pr-slot-num">2</div>
+        <div class="pr-slot-info">
+          <div class="pr-slot-title">Why WUHS is Among the Best Caribbean Medical Schools</div>
+<a class="read" href="https://www.wuhs.edu.bz/events/best-caribbean-medical-schools.php" target="_blank">Read Article →</a>        </div>
+
+      </div>
+
+
+      <!-- PR SLOT 3 -->
+      <div class="pr-slot">
+        <div class="pr-slot-num">3</div>
+        <div class="pr-slot-info">
+          <div class="pr-slot-title">
+
+WUHS Third Year MD Student, Janelle Vallejo</div>
+          <div class="pr-slot-url"><!-- paste-your-pr-url-here --></div>
+<a class="read" href="https://www.wuhs.edu.bz/events/wuhs-third-year-md-student-janelle-vallejo.php" target="_blank">Read Article →</a>        </div>
+
+      </div>
+
+
+      <!-- PR SLOT 4 -->
+      <div class="pr-slot">
+        <div class="pr-slot-num">4</div>
+        <div class="pr-slot-info">
+          <div class="pr-slot-title">National AIDS Commission</div>
+          <div class="pr-slot-url"><!-- paste-your-pr-url-here --></div>
+<a class="read" href="https://www.wuhs.edu.bz/events/national-aids-commission.php" target="_blank">Read Article →</a>        </div>
+
+    </div>
+
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="cta-banner" id="apply">
+  <h2>Turn Your Medical Dreams into Reality</h2>
+  <p>Join thousands of students who have chosen Washington University of Health and Science as their path to becoming a physician in the USA or Canada.</p>
+  <div class="cta-actions">
+  
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <div style="width:38px;height:38px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;color:var(--navy);font-size:17px;">W</div>
+        <div style="color:white;font-size:14px;font-weight:600;line-height:1.3;">Washington University<br/><span style="font-size:11px;color:rgba(255,255,255,.5);font-weight:400;">of Health and Science · Belize</span></div>
+      </div>
+      <p>Helping aspiring physicians achieve their dream of practicing medicine in the USA and Canada for over 20 years.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="#">Doctor of Medicine (MD)</a></li>
+        <li><a href="#">Pre-Clinical Sciences</a></li>
+        <li><a href="#">Clinical Rotations</a></li>
+        <li><a href="#">USMLE Preparation</a></li>
+        <li><a href="#">Residency Guidance</a></li>
+      </ul>
+    </div>
+
 
